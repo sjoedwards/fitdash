@@ -19,6 +19,7 @@ workout
 - id
 - session_id
 - date
+- user_id
 
 workout-exercise
 - id
@@ -43,5 +44,9 @@ session
 - name
 
 exercise
+- id
+- name
+
+user
 - id
 - name
