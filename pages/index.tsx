@@ -2,29 +2,8 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import React, { ReactElement } from "react";
 
-interface IDeficitResponse {
-  averageDeficitCurrentMonth: string;
-  predictedWeeklyWeightDiff: {
-    noMovingAverage: {
-      weightDiffKilos: string;
-      deficitForRemainingDaysThisMonth: string;
-    };
-  };
-  deficits: IDeficitApiData[];
-}
-
-interface IDeficitApiData {
-  dateTime: string;
-  deficit: string;
-}
 const getConfig = () => ({
-  urls: {
-    deficit: process.env.NEXT_PUBLIC_DEFICIT_URL || "",
-  },
-  fitbit: {
-    clientId: process.env.NEXT_PUBLIC_FITBIT_CLIENT_ID || "",
-    redirectUri: process.env.NEXT_PUBLIC_FITBIT_REDIRECT_URI,
-  },
+  urls: {},
 });
 const config = getConfig();
 
@@ -33,7 +12,7 @@ export default function Home(): ReactElement {
     <div className={styles.container}>
       <Head>
         <title>Fitdash</title>
-        <meta name="description" content="deficit" />
+        <meta name="description" content="fitdash" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
