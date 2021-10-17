@@ -1,0 +1,3 @@
+- Unit tested
+- Cypress tested
+- Passes accessibility audit

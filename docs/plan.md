@@ -2,7 +2,7 @@ Phase 1
 
 - [ ] When I open the app, I should see a list of sessions
 - [ ] When I click each session, I should see 1 option, 'See past workouts'
-- [ ] When I click exercises, I should see a swipable view of each exercise
+- [ ] When I click exercises, I should see a swipeable view of each exercise
 
 Phase 2
 - [ ] When I open the app, I should see a list of sessions
